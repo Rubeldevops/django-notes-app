@@ -2,7 +2,6 @@ version: "3.8"
 
 services:
   nginx:
-    build: ./nginx
     image: nginx
     container_name: "nginx_cont"
     ports:
@@ -15,7 +14,6 @@ services:
 
   django_app:
     build:
-      context: .
     image: django_app
     container_name: "django_cont"
     ports:
